@@ -8,7 +8,8 @@ const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::scraper.scraper', ({ strapi }) => ({
     async findOne(ctx) {
-        const { slug } = ctx.params;
+        // const { slug } = ctx.params;   
+        const slug = 'https-ayoubcomputers-com-laptops'
         const entity = await strapi.db.query('api::scraper.scraper').findOne({
             where: { slug }
         });
