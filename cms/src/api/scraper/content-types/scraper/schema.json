@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scrapers",
+  "info": {
+    "singularName": "scraper",
+    "pluralName": "scrapers",
+    "displayName": "scraper",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "frequency": {
+      "type": "string"
+    },
+    "next_at": {
+      "type": "datetime"
+    }
+  }
+}
